@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Patrick+Hand+SC" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<title>Choose your own NXNE adventure</title>
+</head>
+<body>
+	<div class="panel-container flex-container">
+		<header class="flex-container">
+			<div class="logo">
+				<a href="http://nxne.com/"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="header-text">
+				<div class="p-flex">
+					<p class="header-text_chooseText">Choose</p>
+					<p class="header-text_yourText">Your Own</p>
+				</div>
+				<h1>Adventure</h1>
+			</div>
+		</header>
+
+		<!-- END OF HEADER -->
+		
+		<form class="intro-form">
+			<div class="intro panel">		
+				<div class="background-img">
+					<div class="intro-text animated fadeInUp">
+						<div class="intro-text-input">
+							<p class="intro-synopsis">It's time for one of Toronto's biggest music festivals, and this local band needs your help to play a killer show. Pick your own band name and get started on this choosable-path adventure!</p>
+							<p>The</p><input type="text" class="myInput" name="myInput" id="bandName" maxlength="20" placeholder="Pick a band name">
+						</div>
+						<button class="submit-container hvr-sweep-to-bottom" type="submit">
+							<p>Let's Go!</p>
+						</button>	
+					</div>
+				</div>
+			</div>
+		</form>	
+
+			<!-- END OF INTRO panel -->
+			<!-- START OF panel A -->
+
+		<form class="panel-form">
+			<div class="hidden" id="panelA">
+				<div class="panel animated">
+					<p>It's Saturday at 7:00 p.m. and The <span class="band"></span> get a message from a NXNE booker. Two last minute slots have opened up for the shows tonight, and they've asked The <span class="band"></span> to play! Which show do they choose?</p>
+					<img src="images/panelA.jpg" alt="Band members sitting on couch with pizza and beer">
+					<div class="radio-label radio-top">
+						<input type="radio" name="option" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Travel 6 km to Queen Street and headline at the Horseshoe!</label>
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="option" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">Open for SuperAwesomeBand down the street at Danforth Music Hall!</label>						
+						</div>
+					</div>
+					<div class="submit-container submit-containerA">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel A -->
+			<!-- START OF panel B -->
+
+			<div class="hidden" id="panelB">
+				<div class="panel">
+					<p>The <span class="band"></span> have decided to headline the famous Horseshoe Tavern, but the band van is currently in the shop for repairs. How will The <span class="band"></span> get there with all their gear?</p>
+					<img src="images/panelB.jpg" alt="Band memebers in front of their gear">
+					<div class="radio-label radio-top">
+						<input type="radio" name="panelBOption" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Ride the Red Rocket and hope everything goes smoothly.</label>
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="panelBOption" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">Call their buddy Greg and ask to borrow his car.</label>
+						</div>
+					</div>
+					<div class="submit-container submit-containerB">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel B -->
+			<!-- START OF panel C -->
+
+			<div class="hidden" id="panelC">
+				<div class="panel">
+					<p>The <span class="band"></span> have decided to keep it close and open for SuperAwesomeBand at The Danforth Music Hall. SuperAwesomeBand wants to know if The <span class="band"></span> will be bringing their own gear, or if they will be using SuperAwesomeBand's equipment.</p>
+					<img src="images/panelC.jpg" alt="Guitars and drum sticks">
+					<div class="radio-label radio-top">
+						<input type="radio" name="panelCOption" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Carry the gear down the street to The Danforth Music Hall.</label>
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="panelCOption" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">Use SuperAwesomeBand's gear instead of risking damage to their own.</label>						
+						</div>
+					</div>
+					<div class="submit-container submit-containerC">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel C -->
+			<!-- START OF panel D -->
+
+			<div class="hidden" id="panelD">
+				<div class="panel">
+					<p>The <span class="band"></span> make it on the streetcar with all their gear, but unfortunately the streetcar has broken down and the band has missed soundcheck. The booker is annoyed, and has kicked The <span class="band"></span> off the bill.</p>
+					<img src="images/panelD.jpg" alt="Band stuck on TTC bus">
+					<div class="submit-container submit-containerD">
+						<a href="index.html" class="hvr-sweep-to-bottom">Try Again!</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- END OF panel D -->
+			<!-- START OF panel E -->	
+
+			<div class="hidden" id="panelE">
+				<div class="panel">
+					<p>The <span class="band"></span> have decided to borrow Greg's car, but Greg is broke and wants payment in exchange for his transportation services. Alternatively, they can use the car for free if they go pick it up themselves.</p>
+					<img src="images/panelE.jpg" alt="Band on the phone with their friend Greg">
+					<div class="radio-label radio-top">
+						<input type="radio" name="panelEOption" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Send the bassist to bike to Greg's, get the car, and pick up the remaining bandmates and gear.</label>						
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="panelEOption" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">There's no time! Pay Greg to drive the band and gear to The Horseshoe Tavern.</label>						
+						</div>
+					</div>
+					<div class="submit-container submit-containerE">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel E -->
+			<!-- START OF panel F -->	
+
+			<div class="hidden" id="panelF">
+				<div class="panel">
+					<p>The <span class="band"></span> are struggling to carry their equipment down the street. A group of strangers offer to help transport the gear. What do The <span class="band"></span> do?</p>
+					<img src="images/panelF.jpg" alt="Shadowy figures">
+					<div class="radio-label radio-top">
+						<input type="radio" name="panelFOption" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Accept help from the group of strangers.</label>
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="panelFOption" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">No way! Don't let the strangers touch the equipment.</label>
+						</div>
+					</div>
+					<div class="submit-container submit-containerF">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>		
+				</div>
+			</div>
+
+			<!-- END OF panel F -->
+			<!-- START OF panel G -->	
+
+			<div class="hidden" id="panelG">
+				<div class="panel">
+					<p>While setting up for soundcheck with SuperAwesomeBand's gear, The <span class="band"></span> blow a fuse and the gear erupts in flames. SuperAwesomeBand is angry and the show has been cancelled. The <span class="band"></span> have been banned from ever playing NXNE or The Danforth Music Hall again.</p>
+					<img src="images/panelG.jpg" alt="Amps on smoke">
+					<div class="submit-container submit-containerG">
+						<a href="index.html" class="hvr-sweep-to-bottom">Try Again?</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel G -->
+			<!-- START OF panel H -->	
+
+			<div class="hidden" id="panelH">
+				<div class="panel">
+					<p>The <span class="band"></span> bassist has biked to Greg's to pick up the car. Upon arriving to Greg's he informs that the car is almost out of gas...</p>
+					<img src="images/panelHI.jpg" alt="Gas meter approaching empty">
+					<div class="radio-label radio-top">
+						<input type="radio" name="panelHOption" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Don't get gas, there's no time!</label>
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="panelHOption" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">Stop and get gas as quickly as possible</label>
+						</div>
+					</div>
+					<div class="submit-container submit-containerH">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel H -->
+			<!-- START OF panel I -->
+
+			<div class="hidden" id="panelI">
+				<div class="panel">
+					<p>Greg picks up The <span class="band"></span> and their gear. As they are about to leave for The Horseshoe Tavern, Greg realizes that he is almost out of gas. What now?</p>
+					<img src="images/panelHI.jpg" alt="Gas meter approaching empty">
+					<div class="radio-label radio-top">
+						<input type="radio" name="panelIOption" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Stop and get gas as quickly as possible.</label>
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="panelIOption" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">Don't get gas, there's no time!</label>
+						</div>
+					</div>
+					<div class="submit-container submit-containerI">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END panel I -->
+			<!-- START OF panel J -->	
+
+			<div class="hidden" id="panelJ">
+				<div class="panel">
+					<p>The strangers were very helpful and the gear has arrived to the venue with no damages. SuperAwesomeBand calls The <span class="band"></span> over to have a quick chat, but The <span class="band"></span> are worried about leaving their equipment unsupervised.</p>
+					<img src="images/panelJ.jpg" alt="Gear at back of venue">
+					<div class="radio-label radio-top">
+						<input type="radio" name="panelJOption" id="option1" value="option1" class="tweak-input">
+						<div class="label">
+							<label for="option1">Ask SuperAwesomeBand's roadie to watch over the gear.</label>
+						</div>
+					</div>
+					<div class="radio-label">
+						<input type="radio" name="panelJOption" id="option2" value="option2" class="tweak-input">
+						<div class="label">
+							<label for="option2">Leave the gear unsupervised.</label>
+						</div>
+					</div>
+					<div class="submit-container submit-containerJ">
+						<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+					</div>	
+				</div>
+			</div>
+				
+			<!-- END OF panel J -->
+			<!-- START OF panel K -->	
+
+			<div class="hidden" id="panelK">
+				<div class="panel">
+					<p>The <span class="band"></span> decline help from the strangers. While pushing the amp cab down the street, one of the wheels hits a rock and the amp head tumbles down on The <span class="band"></span> bassist, breaking his hand. The <span class="band"></span> can't play the show!</p>
+					<img src="images/panelK.jpg" alt="Broken hand">
+					<div class="submit-container submit-containerK">
+						<a href="index.html" class="hvr-sweep-to-bottom">Try Again?</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel K -->
+			<!-- START OF panel L -->	
+
+			<div class="hidden" id="panelL">
+				<div class="panel">
+					<p>The <span class="band"></span> bassist ran out of gas! His bandmates are stranded and don't make it on time to the show. They never forgive him, and he's kicked out of The <span class="band"></span>.</p>
+					<img src="images/panelL.jpg" alt="Crying band member in the rain">
+					<div class="submit-container submit-containerL">
+						<a href="index.html" class="hvr-sweep-to-bottom">Try again?</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel L -->
+			<!-- START OF panel M -->	
+
+			<div class="hidden" id="panelM">
+				<div class="panel">
+					<p>The <span class="band"></span> bassist picks up his bandmates and gear, and quickly stops for gas. Oh no, it's The Gear Thief Gang! They tie up The <span class="band"></span> with patch cords and steal all of the equipment. The <span class="band"></span> never make it to the show.</p>
+					<img src="images/panelM.jpg" alt="Three characters in Gear Thief Gang jackets">
+					<div class="submit-container submit-containerM">
+						<a href="index.html" class="hvr-sweep-to-bottom">Try again?</a>
+					</div>	
+				</div>
+				</div>
+
+			<!-- END OF panel M -->
+			<!-- START OF panel N -->	
+
+			<div class="hidden" id="panelN">
+			<div class="panel">
+				<p>The <span class="band"></span> barely make it to The Horseshoe Tavern on time. They realize they've forgotten their amp head in Greg's car! Greg is gone to get gas! What now?</p>
+				<img src="images/panelN.jpg" alt="Amp head">
+				<div class="radio-label radio-top">
+					<input type="radio" name="panelNOption" id="option1" value="option1" class="tweak-input">
+					<div class="label">
+						<label for="option1">Call Greg to bring the amp head and hope he makes it before soundcheck.</label>					
+					</div>
+				</div>
+				<div class="radio-label">
+					<input type="radio" name="panelNOption" id="option2" value="option2" class="tweak-input">
+					<div class="label">
+						<label for="option2">Borrow the opening band's amp head.</label>	
+					</div>
+				</div>
+				<div class="submit-container submit-containerN">
+					<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+				</div>	
+			</div>
+			</div>
+
+			<!-- END OF panel N -->
+			<!-- START OF panel O -->	
+
+			<div class="hidden" id="panelO">
+				<div class="panel">
+					<p>SuperAwesomeBand has asked The <span class="band"></span> to join them on their world tour if the show goes well! But uh oh, they return to find that the SuperAwesomeBand roadie has destroyed their gear! SuperAwesomeBand is apologetic, but they do not lend you their gear. The <span class="band"></span> are replaced on the bill, and they are not asked to join SuperAwesomeBand's tour. </p>
+					<img src="images/panelO.jpg" alt="Roadie with two women, amps are smoking, beer everywhere">
+					<div class="submit-container submit-containerO">
+						<a href="index.html" class="hvr-sweep-to-bottom">Try again?</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END panel O  -->
+			<!-- START OF panel P -->	
+
+			<div class="hidden" id="panelP">
+			<div class="panel">
+				<p>SuperAwesomeBand has asked The <span class="band"></span> to join them on their world tour if the show goes well! The gear is undamaged, and The <span class="band"></span> ROCK their 45 minute set! The crowd is chanting for more! What do The <span class="band"></span> do?</p>
+				<img src="images/panelP.jpg" alt="Crowd chanting encore">
+				<div class="radio-label radio-top">
+					<input type="radio" name="panelPOption" id="option1" value="option1" class="tweak-input">
+					<div class="label">
+						<label for="option1">Play their 15-minute prog rock instrumental song, it's always a crowd pleaser!</label>					
+					</div>
+				</div>
+				<div class="radio-label">
+					<input type="radio" name="panelPOption" id="option2" value="option2" class="tweak-input">
+					<div class="label">
+						<label for="option2">Sorry, the band's time is up! They pack up their gear and head off stage.</label>					
+					</div>
+				</div>
+				<div class="submit-container submit-containerP">
+					<a href="#" class="hvr-sweep-to-bottom">Submit!</a>
+				</div>	
+			</div>
+			</div>
+
+			<!-- END OF panel P -->
+			<!-- START OF panel Q -->	
+
+			<div class="hidden" id="panelQ">
+				<div class="panel">
+					<p>The <span class="band"></span> convince Greg to rush back with the amp head (with the promise of a free beer). The <span class="band"></span> play a great set and gets signed to Arts &amp; Crafts Records!</p>
+					<img src="images/panelQ.jpg" alt="Band playing to enthusiastic crowd">
+					<div class="submit-container submit-containerQ">
+						<a href="index.html" class="hvr-sweep-to-bottom">Play again?</a>
+					</div>		
+				</div>
+			</div>
+
+			<!-- END OF panel Q -->
+			<!-- START OF panel R -->	
+
+			<div class="hidden" id="panelR">
+				<div class="panel">
+					<p>The <span class="band"></span> decide to borrow the opening band's amp head and it blows a fuse! The crowd quickly turns against The <span class="band"></span> and boos them off stage...</p>
+					<img src="images/panelR.jpg" alt="Crowd boo-ing">
+					<div class="submit-container submit-containerR">
+						<a href="index.html" class="hvr-sweep-to-bottom">Try again?</a>
+					</div>		
+				</div>
+			</div>
+
+			<!-- END OF panel R -->
+			<!-- START OF panel S -->	
+
+			<div class="hidden" id="panelS">
+					<div class="panel">
+					<p>The crowd rocked out to the encore, but SuperAwesomeBand is mad that The <span class="band"></span> have encroached their set time. SuperAwesomeBand decides that The <span class="band"></span> is not a good fit for their tour. The <span class="band"></span> develop their own following and eventually headline their own world tour!</p>
+					<img src="images/panelS.jpg" alt="World map">
+					<div class="submit-container submit-containerS">
+						<a href="index.html" class="hvr-sweep-to-bottom">Play again?</a>
+					</div>		
+				</div>
+			</div>
+
+			<!-- END OF panel S -->
+			<!-- START OF panel T -->	
+
+			<div class="hidden" id="panelT">
+				<div class="panel">
+					<p>After the show, SuperAwesomeBand congratulates The <span class="band"></span> on a great set, and invites the band to join their world tour! The <span class="band"></span> become huge in Japan.</p>
+					<img src="images/panelT.jpg" alt="Fan in Japan taking selfie with vocalist">
+					<div class="submit-container submit-containerT">
+						<a href="index.html" class="hvr-sweep-to-bottom">Play again?</a>
+					</div>	
+				</div>
+			</div>
+
+			<!-- END OF panel T -->
+		</form>
+	</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.checkbox-radio-tweak.js"></script>
+
+
+</body>
+<footer>
+	<p>&copy; 2017 Amy Tschupruk &amp; Alex Clarke</p>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
