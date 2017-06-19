@@ -91,7 +91,7 @@ button{
 /**** HEADER ****/
 
 header {
-	background-color: #141115;
+	background-color: black;
 	margin: 20px 0;
 	padding: 10px 15px;
 }
@@ -196,7 +196,7 @@ p.intro-synopsis {
 
 
 .panel {
-	background-color: #141115;
+	background-color: black;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
